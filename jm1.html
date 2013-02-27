@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gbk" />
+	<title>My first jQuery Mobile code</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.css" />  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="b" id="page_1" data-title="Page 1 Title">
+		<div data-role="header">
+			<h1>jQuery Mobile</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-dividertheme= "b">
+				<li data-role="list-divider">Summary</li>
+				<li><a href="ch1.html">The Platform</a></li>
+				<li><a href="cap2.html">The Page</a></li>
+				<li><a href="cap3.html">Lists</a></li>
+				<li><a href="cap4.html">Components</a></li>
+				<li><a href="#page_2">Page 2</a></li>
+				<li data-role="list-divider"></li>
+			</ul>
+			<ul data-role="listview" data-inset="true" data-dividertheme="d" data-theme="c">
+				<li data-role="list-divider">Links</li>
+				<li><a href="http://localhost/jm2.html">goto jm3.html</a></li>
+				<li><a href="http://localhost/tb.html">goto tb.html</a></li>
+				<li><a href="http://www.mobilexweb.com">Mobile Web Blog </a></li>
+				<li><a href="http://www.oreilly.com">O'Reilly Media</a></li>
+				<li data-role="list-divider"></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4>&copy; 2011 Maximiliano Firtman @firt</h4>
+		</div>
+	</div>
+	<!-- 不会显示的，因为这是新的一页 ------------------------------------------------------ -->
+	<div data-role="page" data-theme="a" id="page_2" data-title="Page 2 Title"
+			data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="b">
+		<div data-role="header">
+			<h1>jQuery Mobile</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-dividertheme="a">
+				<li data-role="list-divider">Summary</li>
+				<li><a href="ch1.html">The Platform</a></li>
+				<li><a href="cap2.html">The Page</a></li>
+				<li><a href="cap3.html">Lists</a></li>
+				<li><a href="cap4.html">Components</a></li>
+				<li><a href="#page_1">Page 1</a></li>
+				<li><a data-rel="back">Go Back</a></li>
+			</ul>
+			<ul data-role="listview" data-inset="true" data-dividertheme="d">
+				<li data-role="list-divider">Links</li>
+				<li><a href="http://www.mobilexweb.com">Mobile Web Blog </a></li>
+				<li><a href="http://www.oreilly.com">O'Reilly Media</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4>&copy; 2011 Maximiliano Firtman @firt</h4>
+		</div>
+	</div>
+	<!-- -------------------------------------------------------------------------------- -->
+</body>
+</html>
